@@ -1,4 +1,4 @@
-const images = [
+const arrImages = [
 	{
 		image: 'img/01.webp',
 		title: "Marvel's Spiderman Miles Morale",
@@ -26,10 +26,13 @@ const images = [
 	},
 ];
 
-console.table(images);
+console.table(Images);
 
 const album = document.getElementById("album");
 
+for(let i=0; i<images.length; i++){
+    album.innerHTML += `<img src="img/${images[i].text}"`
+}
 
 const eleSliderViewer = document.querySelector('.slider-viewer');
 const eleSliderThumbs = document.querySelector('.thumbs');
