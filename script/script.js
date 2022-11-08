@@ -48,7 +48,11 @@ for (let i = 0; i < arrImages.length; i++) {
 	if (i === 0) {
 		eleImg.classList.add('active');
 	}
-	eleSliderViewer.append(eleImg);
+	eleSliderViewer.append(eleDiv);
+	eleDiv.append(eleImg);
+	eleDiv.append(eleH2);
+	eleDiv.append(eleP);
+
 
 	const eleThumb = document.createElement('img');
 	eleThumb.src = arrImages[i].image;
