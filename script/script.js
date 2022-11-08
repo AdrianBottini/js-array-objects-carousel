@@ -30,9 +30,9 @@ console.table(arrImages);
 
 const album = document.getElementById("album");
 
-for(let i=0; i<arrImages.length; i++){
-    album.innerHTML += `<img src="img/01.webp">`
-}
+// for(let i=0; i<arrImages.length; i++){
+//     album.innerHTML += `<img src="img/01.webp">`
+// }
 
 const eleSliderViewer = document.querySelector('.slider-viewer');
 const eleSliderThumbs = document.querySelector('.thumbs');
@@ -41,7 +41,7 @@ const eleBtnRight = document.querySelector('.btn-right');
 
 for (let i = 0; i < arrImages.length; i++) {
 	const eleImg = document.createElement('img');
-	eleImg.src = arrImages[i];
+	eleImg.src = arrImages[i].image;
 	eleImg.classList.add('slider-img');
 	if (i === 0) {
 		eleImg.classList.add('active');
@@ -49,7 +49,7 @@ for (let i = 0; i < arrImages.length; i++) {
 	eleSliderViewer.append(eleImg);
 
 	const eleThumb = document.createElement('img');
-	eleThumb.src = arrImages[i];
+	eleThumb.src = arrImages[i].image;
 	eleThumb.classList.add('thumb-img');
 	if (i === 0) {
 		eleThumb.classList.add('active');
