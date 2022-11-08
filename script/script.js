@@ -26,6 +26,11 @@ const images = [
 	},
 ];
 
+console.table(images);
+
+const album = document.getElementById("album");
+
+
 const eleSliderViewer = document.querySelector('.slider-viewer');
 const eleSliderThumbs = document.querySelector('.thumbs');
 const eleBtnLeft = document.querySelector('.btn-left');
