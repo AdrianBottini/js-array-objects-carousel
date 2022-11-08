@@ -26,12 +26,12 @@ const arrImages = [
 	},
 ];
 
-console.table(Images);
+console.table(arrImages);
 
 const album = document.getElementById("album");
 
-for(let i=0; i<images.length; i++){
-    album.innerHTML += `<img src="img/${images[i].text}"`
+for(let i=0; i<arrImages.length; i++){
+    album.innerHTML += `<img src="img/${arrImages[i].text}"`
 }
 
 const eleSliderViewer = document.querySelector('.slider-viewer');
