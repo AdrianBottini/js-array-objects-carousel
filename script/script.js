@@ -31,7 +31,7 @@ console.table(arrImages);
 const album = document.getElementById("album");
 
 for(let i=0; i<arrImages.length; i++){
-    album.innerHTML += `<img src="img/${arrImages[i].text}"`
+    album.innerHTML += `<img src="img/arrImages"`
 }
 
 const eleSliderViewer = document.querySelector('.slider-viewer');
