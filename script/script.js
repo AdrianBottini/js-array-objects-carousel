@@ -30,10 +30,6 @@ console.table(arrImages);
 
 const album = document.getElementById("album");
 
-// for(let i=0; i<arrImages.length; i++){
-//     album.innerHTML += `<img src="img/01.webp">`
-// }
-
 const eleSliderViewer = document.querySelector('.slider-viewer');
 const eleSliderThumbs = document.querySelector('.thumbs');
 const eleBtnLeft = document.querySelector('.btn-left');
