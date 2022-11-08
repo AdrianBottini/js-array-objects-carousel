@@ -37,10 +37,14 @@ const eleBtnRight = document.querySelector('.btn-right');
 
 for (let i = 0; i < arrImages.length; i++) {
 	const eleImg = document.createElement('img');
+	const eleDiv = document.createElement('div');
+	const eleP = document.createElement('p');
+	const eleH2 = document.createElement('h2');
 	eleImg.src = arrImages[i].image;
-	eleImg.src = arrImages[i].title;
-	eleImg.src = arrImages[i].text;
-	eleImg.classList.add('slider-img');
+	eleH2.innerHTML = arrImages[i].title;
+	eleP.innerHTML = arrImages[i].text;
+	eleImg.classList.add('eleDiv');
+
 	if (i === 0) {
 		eleImg.classList.add('active');
 	}
