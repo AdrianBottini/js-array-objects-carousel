@@ -38,6 +38,8 @@ const eleBtnRight = document.querySelector('.btn-right');
 for (let i = 0; i < arrImages.length; i++) {
 	const eleImg = document.createElement('img');
 	eleImg.src = arrImages[i].image;
+	eleImg.src = arrImages[i].title;
+	eleImg.src = arrImages[i].text;
 	eleImg.classList.add('slider-img');
 	if (i === 0) {
 		eleImg.classList.add('active');
